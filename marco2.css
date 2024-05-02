@@ -1,0 +1,60 @@
+/* Estilos para el segundo marco */
+#segundo-marco {
+  background-image: url('fondo1.jpg');
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Ajusta el espaciado interno según sea necesario */
+  color: white;
+}
+
+/* Estilos para el menú desplegable */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333; /* Cambia el color de fondo del menú */
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white; /* Cambia el color del texto del menú */
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd; /* Cambia el color de fondo al pasar el mouse */
+  color: #333; /* Cambia el color del texto al pasar el mouse */
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* Estilos para las viñetas */
+.viñetas {
+  list-style-type: disc;
+}
+
+/* Estilos para el GIF */
+.gif {
+  max-width: 100%; /* Reducir el tamaño del GIF */
+}
+
+/* Otros estilos según sea necesario */

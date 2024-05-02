@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juan Andres Revollo Gutierrez</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+    }
+
+    /* Estilos para cada frame */
+    frame {
+      border: none;
+      width: 100%;
+      height: 33.33%;
+    }
+
+    /* Estilos para los frameset */
+    frameset {
+      border-collapse: collapse;
+      border-spacing: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* Estilos para las divisiones verticales */
+    frameset > frame:nth-child(odd) {
+      background-color: #f0f0f0;
+    }
+
+    /* Estilos para las divisiones impares */
+    frameset > frame:nth-child(even) {
+      background-color: #e0e0e0;
+    }
+  </style>
+</head>
+<frameset cols="33%, 33%, 33%">
+  <!-- Primera división vertical -->
+  <frame name="particion1" src="valoracion.html">
+  <!-- Segunda división vertical -->
+  <frame name="particion2" src="marco2.html">
+  <!-- Tercera división vertical -->
+  <frame name="particion3" src="marco3.html">
+  <!-- Mensaje para navegadores que no soportan frames -->
+  <noframes>
+    <body>
+      <p>Esta página utiliza marcos, pero su navegador no los admite.</p>
+    </body>
+  </noframes>
+</frameset>
+</html>

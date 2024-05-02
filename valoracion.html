@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Trabajadores</title>
+  <link rel="stylesheet" href="valoracion.css">
+</head>
+<body>
+
+<!-- Contenedor principal del formulario -->
+<div class="formulario">
+  <h2>Registro trabajadores</h2>
+
+  <!-- Campos de entrada de texto -->
+  <label for="rut">Rut:</label>
+  <input type="text" id="rut" placeholder="Sin puntos ni guion">
+
+  <label for="nombre">Nombre:</label>
+  <input type="text" id="nombre">
+
+  <label for="apellido-paterno">Apellido Paterno:</label>
+  <input type="text" id="apellido-paterno">
+
+  <label for="apellido-materno">Apellido Materno:</label>
+  <input type="text" id="apellido-materno">
+
+  <!-- Opciones de género -->
+  <label>Sexo:</label>
+  <input type="radio" id="masculino" name="genero" value="masculino">
+  <label for="masculino">Masculino</label>
+  <input type="radio" id="femenino" name="genero" value="femenino">
+  <label for="femenino">Femenino</label>
+
+  <!-- Opciones de nivel de estudio -->
+  <label>Nivel de estudio:</label>
+  <input type="checkbox" id="no-tiene" name="nivel-estudio" value="no-tiene">
+  <label for="no-tiene">No tiene</label>
+  <input type="checkbox" id="tecnico" name="nivel-estudio" value="tecnico">
+  <label for="tecnico">Técnico</label>
+  <input type="checkbox" id="universitario" name="nivel-estudio" value="universitario">
+  <label for="universitario">Universitario</label>
+
+  <!-- Selección de ciudad de nacimiento -->
+  <label for="ciudad-nacimiento">Ciudad de nacimiento:</label>
+  <select id="ciudad-nacimiento">
+    <option value="Santa Cruz">Santa Cruz</option>
+    <!-- Agrega más opciones de ciudad -->
+  </select>
+
+  <!-- Campos para cargar archivos -->
+  <label for="curriculum">Curriculum:</label>
+  <input type="file" id="curriculum">
+
+  <label for="foto">Foto:</label>
+  <input type="file" id="foto">
+
+  <!-- Botón para registrar -->
+  <button type="submit">Registrar trabajador</button>
+</div>
+</body>
+</html>
